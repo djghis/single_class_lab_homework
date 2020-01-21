@@ -46,7 +46,7 @@ end
 
   def test_points_update
  @team.points_update("win")
- assert_equal(1, @team.check_points)
+ assert_equal(1, @team.points)
   end
 
 
