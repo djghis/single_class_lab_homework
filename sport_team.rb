@@ -6,6 +6,9 @@ class SportTeam
       @players = players
       @coach = coach
       @points = points
+      ##could have done
+      #@points = 0  #sets any new team to 0
+      ##(no need to set point next to initialize)
   end
 
   def return_team_name
@@ -29,6 +32,7 @@ class SportTeam
   end
 
   def look_for_player(player)
+    # return @players.include?(player) do the same as the function
     player_array = []
     for name in @players
       if name == player
